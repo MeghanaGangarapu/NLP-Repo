@@ -1,0 +1,9 @@
+numpy
+pandas
+scikit-learn
+textblob
+streamlit
+tensorflow
+keras
+jupyter
+nltk
