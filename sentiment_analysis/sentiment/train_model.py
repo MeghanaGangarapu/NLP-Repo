@@ -6,8 +6,8 @@ from .preprocess import preprocess
 
 def train_model(csv_path, model_path):
     df = pd.read_csv(csv_path)
-    texts = df["review"].apply(lambda x: " ".join(preprocess(x)))
-    labels = df["label"]
+    texts = df["Text"].apply(lambda x: " ".join(preprocess(x)))
+    labels = df["Sentiment"]
 
     vectorizer = CountVectorizer()
     X = vectorizer.fit_transform(texts)
